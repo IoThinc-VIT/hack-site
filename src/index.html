@@ -159,67 +159,23 @@
         dataLayer.push(arguments)
       }
     </script>
+    <style type="text/css">
+      body{
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAOUlEQVRIx2NkYOP5z0BDwMRAYzBqAWELJOVUsEpQS5xxNBWNpqLRVDRqwWgqGrWALhbYu3jTNBUBAOTfCpTGsWyyAAAAAElFTkSuQmCC);
+        background-position: center;
+        background-repeat: repeat;
+      }
+      .set-bg{
+        /* background-image: url('./assets/images/bg.png') !important; */
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAOUlEQVRIx2NkYOP5z0BDwMRAYzBqAWELJOVUsEpQS5xxNBWNpqLRVDRqwWgqGrWALhbYu3jTNBUBAOTfCpTGsWyyAAAAAElFTkSuQmCC) !important;
+        background-position: center;
+        background-repeat: repeat;
+      }
+    </style>
   </head>
 
   <body class="hide-navbar">
-    <header class="section section--hero" id="hero">
-      <!--googleoff: all-->
-
-      <svg class="hero-bg" aria-hidden="true">
-        <svg filter="url(#lines)">
-          <svg class="hero-bg__shape" x="50%" y="47%" overflow="visible">
-            <path
-              d="M288.385 0H0L147.53 192.623H64.0854L211.615 385.246H500L352.47 192.623H435.915L288.385 0Z"
-              transform="translate(-250, -192.625)"
-              fill="black"
-            />
-          </svg>
-
-          <!-- <circle cx="0" cy="0" r="64" transform="translate(0, 0)" fill="black" id="circle" style="display: none" /> -->
-
-          <rect width="100%" height="100%" fill="transparent" />
-        </svg>
-
-        <defs>
-          <filter id="lines">
-            <feFlood flood-color="#181c19" result="flood-bg"></feFlood>
-            <feFlood flood-color="#3F5182" result="flood-line"></feFlood>
-            <feImage
-              xlink:href="data:image/svg+xml;charset=utf-8,%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20width%3D%221000%22%20height%3D%2220%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%221%22%2F%3E%3C%2Fsvg%3E%0A"
-              x="0"
-              y="0"
-              width="1000"
-              height="20"
-              result="line"
-            ></feImage>
-            <feTile in="line" result="lines"></feTile>
-            <feMorphology in="lines" operator="dilate" radius="1.5" result="lines-medium-thick"></feMorphology>
-            <feComposite in="SourceAlpha" in2="lines" operator="in" result="cropped-lines"></feComposite>
-            <feColorMatrix
-              in="cropped-lines"
-              result="sharp-cropped-lines"
-              values="1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 255 0"
-            ></feColorMatrix>
-            <feMorphology
-              in="sharp-cropped-lines"
-              operator="dilate"
-              radius="6"
-              result="sharp-cropped-lines-thick"
-            ></feMorphology>
-            <feMerge result="all-lines">
-              <feMergeNode in="lines-medium-thick"></feMergeNode>
-              <feMergeNode in="sharp-cropped-lines-thick"></feMergeNode>
-            </feMerge>
-            <feComposite in="flood-line" in2="all-lines" operator="in" result="colored-all-lines"></feComposite>
-            <feMerge result="result">
-              <feMergeNode in="flood-bg"></feMergeNode>
-              <feMergeNode in="colored-all-lines"></feMergeNode>
-            </feMerge>
-          </filter>
-        </defs>
-      </svg>
-      <div class="hero-bg__fade"></div>
-      <!--googleon: all-->
+    <header class="set-bg section section--hero" id="hero">
 
       <div class="title">
         <h1 class="title__title">Io<strong>ThinC</strong></h1>
@@ -238,8 +194,7 @@
         data-location="hero"
         data-role="hacker"
         target="_blank"
-        rel="noopener noreferrer"
-      >
+        rel="noopener noreferrer">
         <span class="classic-button__text">Apply now</span>
       </a>
     </header>
@@ -263,31 +218,8 @@
       </ul>
     </nav>
 
-    <div class="gdpr gdpr--hidden" id="gdpr">
-      <!--googleoff: all-->
-      <span class="gdpr__emoji">🍪</span>
-      <span class="gdpr__text">
-        <!-- <strong class="gdpr__disclaimer">We use cookies!</strong> -->
-        By browsing our website, you consent to the use of cookies and agree to our
-        <a
-          class="gdpr__link"
-          href="https://legal.hackersatupc.org/hackupc/privacy_and_cookies"
-          hreflang="en"
-          target="_blank"
-          rel="noopener noreferrer"
-          >privacy policy</a
-        >.
-      </span>
-      <button class="gdpr__button" type="button" id="gdpr-close" aria-label="Close GDPR notification">
-        <svg stroke="currentColor" fill="none" viewBox="0 0 24 24" class="gdpr__close-icon">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-        </svg>
-      </button>
-      <!--googleon: all-->
-    </div>
-
     <main class="main">
-      <section class="section section--what-is-a-hackathon" id="what-is-a-hackathon">
+      <section class="set-bg section section--what-is-a-hackathon" id="what-is-a-hackathon">
         <div class="content__wrapper content__wrapper--what-is-a-hackathon">
           <div class="card card--big">
             <h2 class="card__title">What is a hackathon?</h2>
@@ -303,19 +235,18 @@
           <div class="card card--big card--outline card--mission">
             <img data-markup-inline src="assets/images/hackupc-logo-white.svg" alt="" />
             <div>
-              <h2 class="card__title">About HackUPC</h2>
+              <h2 class="card__title">About IoThon</h2>
               <p class="card__text">
-                HackUPC is the first student hackathon in Spain. Once a year, we aim to provide a space for students of
-                all experience levels from all around the world where they can improve and learn new skills, meet
-                awesome people and overall, have a great experience! This year's edition the hackathon will be held
-                online.
+                IoThon is the latest hackathon organised by IoThinC. It is a 36-hour hackathon, starting
+from May 14. Registration are open for all. Coding experience is not entirely required, as
+we focus on learning more importantly.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section section--live" id="live">
+      <section class="set-bg section section--live" id="live">
         <div class="content__wrapper">
           <h2 class="section__title section__title--live"><span class="live__dot"></span>Live</h2>
           <p class="live__description">
@@ -340,7 +271,7 @@
         </div>
       </section> -->
 
-      <section class="section section--participate" id="participate">
+      <section class="set-bg section section--participate" id="participate">
         <div class="content__wrapper">
           <h2 class="section__title">How to participate</h2>
           <dl class="participate__container">
@@ -446,7 +377,7 @@
         </div>
       </section>
 
-      <section class="section section--faq" id="faq">
+      <section class="set-bg section section--faq" id="faq">
         <div class="content__wrapper">
           <h2 class="section__title">FAQ</h2>
           <!-- Use the recommended structure by W3 -->
@@ -784,7 +715,7 @@
         </div>
       </section>
 
-      <section class="section section--follow-us" id="follow-us">
+      <section class="set-bg section section--follow-us" id="follow-us">
         <div class="content__wrapper">
           <h2 class="follow-us__title">Stay tuned and don't miss a bit!</h2>
           <p class="follow-us__subtitle">Check our social media networks</p>
@@ -836,7 +767,7 @@
         </div>
       </section>
 
-      <section class="section section--sponsors" id="sponsors">
+      <section class="set-bg section section--sponsors" id="sponsors">
         <div class="content__wrapper">
           <h2 class="section__title">Sponsors</h2>
 
@@ -959,7 +890,7 @@
         </div>
       </section>
 
-      <section class="section section--partners" id="partners">
+      <section class="set-bg section section--partners" id="partners">
         <div class="content__wrapper">
           <h2 class="section__title">Partners</h2>
           <ul class="logo__list logo__list--mili">
@@ -999,7 +930,7 @@
         </div>
       </section>
 
-      <section class="section section--about-us" id="about-us">
+      <section class="set-bg section section--about-us" id="about-us">
         <div class="content__wrapper">
           <h2 class="section__title">The association <br />behind HackUPC</h2>
           <p class="about-us__subtitle">
@@ -1010,12 +941,11 @@
             <div class="card card--about-us">
               <!-- <h2 class="card__title">About us</h2> -->
               <p>
-                We organize events during the year, nationally and internationally, to promote science and technology
-                among students and create a great community in the technological world.
+                An Emerging Technological Innovation. Internet of Things (IoT) is creating an environment of convergence in society. This technology environment brings a paradigm shift in our professional and personal life.
+The IoThinc Club is an initiative taken to encourage and master the students of the institute in the Internet of Things and related domains.
               </p>
               <p>
-                Our mission is to foster learning, designing, and building in order to turn student's ideas into a
-                reality!
+                The main idea is to develop new skills and help students to gain knowledge in the Internet of Things and also work on various related domains. This will also facilitate peer to peer learning among the students.
               </p>
               <a
                 class="classic-button classic-button--about-us"
@@ -1032,7 +962,7 @@
       </section>
     </main>
 
-    <footer class="section section--footer" id="footer">
+    <footer class="set-bg section section--footer" id="footer">
       <a class="footer__previous-edition footer__link" href="https://2019.hackupc.com">2019 site</a>
       <div class="footer-column footer__element">
         <ul class="section__list section__list--contact footer-column__element">
@@ -1157,34 +1087,6 @@
             >HackStart</a
           >
         </div>
-      </div>
-      <div class="section__list section__list--links-list footer__element">
-        <a
-          class="links-list footer__link"
-          href="https://legal.hackersatupc.org/hackupc/terms_and_conditions"
-          target="_blank"
-          rel="noopener noreferrer"
-          hreflang="en"
-          >Terms and conditions</a
-        >
-        <span class="links-list links-list__separator">|</span>
-        <a
-          class="links-list footer__link"
-          href="https://legal.hackersatupc.org/hackupc/legal_notice"
-          target="_blank"
-          rel="noopener noreferrer"
-          hreflang="en"
-          >Legal notice</a
-        >
-        <span class="links-list links-list__separator">|</span>
-        <a
-          class="links-list footer__link"
-          href="https://legal.hackersatupc.org/hackupc/privacy_and_cookies"
-          target="_blank"
-          rel="noopener noreferrer"
-          hreflang="en"
-          >Privacy and cookies</a
-        >
       </div>
 
       <q class="signature footer__element footer__element--last"
