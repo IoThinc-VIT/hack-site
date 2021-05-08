@@ -35,6 +35,10 @@ body {
     text-align: center;
     text-decoration: none;
   }
+
+  &__sponsors {
+    color: green;
+  }
 }
 
 // TODO: show navbar when it's ready (remember to remove the class in the html)

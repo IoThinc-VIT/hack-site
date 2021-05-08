@@ -1,5 +1,5 @@
 .section--about-us {
-  background-color: $c-about-us-bg;
+  background-color: white;
 }
 
 .about-us__subtitle {
@@ -9,6 +9,7 @@
 }
 @media only screen and (max-width: 27.5rem) {
   .section--about-us .section__title {
+    color: white;
     font-size: calc(1rem + 4vw);
   }
 
