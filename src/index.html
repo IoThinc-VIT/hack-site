@@ -158,6 +158,72 @@
       dataLayer.push(arguments)
     }
   </script>
+  <style type="text/css">
+      .btn,
+      .btn-cancel,
+      .page-index {
+        font-family: var(--index-font);
+        font-weight: 100;
+      }
+      .btn {
+        display: inline-block;
+        box-sizing: border-box;
+        padding: 1px 6px;
+        border: 12px solid transparent;
+        margin-right: 23px;
+        margin-bottom: 23px;
+        background: transparent;
+        border-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABmJLR0QAAAAAAAD5Q7t/AAAACXBIWXMAAAsTAAALEwEAmpwYAAAATElEQVRYw+3YwQ0AIAgEwcNi7ID+C7ADmsEa7mFCzM5bzT7BKGXLsHXCOe++7194qJS9NAxBBBFEEEEAAPyGNYh5iCCCCCLIE9O+9C7MERJ/HwIJlAAAAABJRU5ErkJggg==')
+          12;
+        cursor: pointer;
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 25px;
+        outline: none;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        vertical-align: top;
+      }
+
+      .btn.red {
+        background-color: rgb(228, 59, 59);
+        color: rgb(0, 0, 0);
+      }
+
+      .btn.red:hover {
+        background-color: rgb(0, 0, 0) !important;
+        color: rgb(228, 59, 59) !important;
+      }
+
+      .btn.contact {
+        display: block;
+        width: 70%;
+        margin: 0 auto;
+      }
+      .btn.light {
+        font-weight: 100;
+      }
+      .btn:focus,
+      .btn:hover:not(:disabled) {
+        background: var(--link-hover-bg-color);
+        color: var(--link-hover-color);
+      }
+
+      .btn-cancel {
+        border-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAASElEQVRYw+3YsQ0AIQwEQUyRLvKahBocvIReMzGgDW0qyVkD3V2T89P35xc+lOTs9RhBggQJEgQAf2MNMg8JEiRI0Ey99qV3ATnLGhkcYlSUAAAAAElFTkSuQmCC')
+          12;
+        color: var(--button-cancel-color);
+      }
+
+      .btn-cancel:focus,
+      .btn-cancel:hover:not(:disabled) {
+        background: transparent;
+        border-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAASUlEQVRYw+3YsQ0AIQwEQUwJ7r/GawFqcPASes3EgDa0qSRnDXR3Tc5P359f+FCSs9djBAkSJEgQAPyNNcg8JEiQIEEz9dqX3gUopR7hfWGEpAAAAABJRU5ErkJggg==')
+          12;
+        color: var(--main-text-color);
+      }
+    </style>  
 </head>
 
 <body class="hide-navbar">
@@ -217,9 +283,9 @@
       </span>
     </div>
 
-    <a href="https://my.hackupc.com" class="classic-button " role="button" data-ga-apply-button data-location="hero"
+    <a href="https://my.hackupc.com" class=" " role="button" data-ga-apply-button data-location="hero"
       data-role="hacker" target="_blank" rel="noopener noreferrer">
-      <span class="classic-button__text">Apply now</span>
+      <span class="btn red" style="min-width: 145px;margin: 20px;">Apply now</span>
     </a>
   </header>
 
@@ -295,9 +361,9 @@
           <strong>When and where will everything happen?</strong> <br />
           Check out our real-time agenda to find it out! It will be available during HackUPC.
         </p>
-        <a href="https://live.hackupc.com" target="_blank" rel="noopener noreferrer" class="classic-button"
+        <a href="https://live.hackupc.com" target="_blank" rel="noopener noreferrer" class=""
           role="button">
-          <span class="classic-button__text">Go to Live</span>
+          <span class="btn red">Go to Live</span>
         </a>
       </div>
     </section>
@@ -322,9 +388,9 @@
                 adding real value and make it possible for hackers to build something they're proud of.
               </p>
               <div class="participate__bottom-row">
-                <a class="classic-button" href="mailto:sponsor@hackupc.com" role="button" data-ga-apply-button
+                <a class="" href="mailto:sponsor@hackupc.com" role="button" data-ga-apply-button
                   data-location="participate" data-role="sponsor">
-                  <span class="classic-button__text">Contact us</span>
+                  <span class="btn red">Contact us</span>
                 </a>
                 <span class="participate__message"></span>
               </div>
@@ -340,11 +406,11 @@
                 you've graduated more than a year ago and can't participate as a hacker, apply now as a mentor!
               </p>
               <div class="participate__bottom-row">
-                <a class="classic-button" href="https://my.hackupc.com/user/signup/mentor/" role="button"
+                <a class="" href="https://my.hackupc.com/user/signup/mentor/" role="button"
                   data-ga-apply-button data-location="participate" data-role="mentor">
-                  <span class="classic-button__text">Apply</span>
+                  <span class="btn red">Apply</span>
                 </a>
-                <!-- <span class="classic-button-disabled">Not open yet</span> -->
+                <!-- <span class="-disabled">Not open yet</span> -->
                 <span class="participate__message"></span>
               </div>
             </dd>
@@ -359,9 +425,9 @@
                 part of this hackathon by our participants!
               </p>
               <div class="participate__bottom-row">
-                <a class="classic-button" href="https://my.hackupc.com/user/signup/mentor/" role="button"
+                <a class="" href="https://my.hackupc.com/user/signup/mentor/" role="button"
                   data-ga-apply-button data-location="participate" data-role="mentor">
-                  <span class="classic-button__text">Partner</span>
+                  <span class="btn red">Partner</span>
                 </a>
                 <span class="participate__message"></span>
               </div>
@@ -378,16 +444,16 @@
               </p>
               <div class="participate__bottom-row">
                 <!-- <a
-                    class="classic-button"
+                    class=""
                     href="#"
                     role="button"
                     data-ga-apply-button
                     data-location="participate"
                     data-role="volunteer"
                   >
-                    <span class="classic-button__text">Apply</span>
+                    <span class="btn red">Apply</span>
                   </a> -->
-                <span class="classic-button-disabled">Closed</span>
+                <span class="-disabled">Closed</span>
                 <span class="participate__message"></span>
               </div>
             </dd>
@@ -889,9 +955,9 @@
               Our mission is to foster learning, designing, and building in order to turn student's ideas into a
               reality!
             </p>
-            <a class="classic-button classic-button--about-us" href="https://hackersatupc.org/" target="_blank"
+            <a class=" --about-us" href="https://hackersatupc.org/" target="_blank"
               rel="noopener noreferrer" role="button">
-              <span class="classic-button__text">Go to website</span></a>
+              <span class="btn red">Go to website</span></a>
           </div>
         </div>
       </div>
