@@ -51,10 +51,8 @@ $fade-height: 200px;
   text-transform: uppercase;
 
   &__title {
-    margin: 0 0 0.2em -0.08em;
-    color: rgb(9, 156, 253);
-    font-size: 1em;
-    font-weight: 400;
+    width: 120%;
+    height: 100%;
   }
 
   &__more-info {
