@@ -380,6 +380,153 @@
       font-weight: 700;
     }
   </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style type="text/css">
+  .timeline_list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  .timeline_item{
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+    margin-bottom: 60px;
+  }
+  .timeline_info{
+    width: 75%;
+    display: flex;
+    border-radius: 12px;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
+        0 18px 36px -18px rgba(0, 0, 0, 0.3),
+        0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+  }
+  .timeline_desc{
+    flex-grow: 1;
+    background: white;
+    text-align: left;
+    padding: 16px;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    font-size: 14px;
+  }
+  .timeline_title{
+    font-size: 20px;
+    margin: 0;
+  }
+  .timeline-msg{
+    color: black;
+  }
+  .timeline_time{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+  }
+  .timeline_icon{
+    width: 50px;
+    height: 50px;
+    color: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+  }
+  .timeline_icon::before{
+    content: '';
+    width: 100px;
+    height: 3px;
+    background: inherit;
+    position: absolute;
+  }
+  .timeline_icon::after{
+    content: '';
+    width: 3px;
+    height: 150px;
+    background: inherit;
+    position: absolute;
+    bottom: 0%;
+    transform: translateY(100%);
+  }
+  .timeline_right .timeline_icon{
+    margin-left: 80px;
+  }
+  .timeline_right .timeline_icon::before{
+    left: 0%;
+    transform: translateX(-100%);
+  }
+  .timeline_left .timeline_icon{
+    margin-right: 80px;
+  }
+  .timeline_left .timeline_icon::before{
+    right: 0%;
+    transform: translateX(100%);
+  }
+  .timeline_last .timeline_icon::after{
+    display: none;
+  }
+
+  @media screen and (max-width: 600px) {
+  .timeline_item{
+    max-width: 300px;
+    display: flex;
+    flex-direction: column-reverse;
+    background: red;
+  }
+  .timeline_info{
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .timeline_desc{
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 12px;
+  }
+  .timeline_time{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 4px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .timeline_icon{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 48px 0px;
+    order: 1;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .timeline_icon::after{
+    display: none;
+  }
+  .timeline_icon::before{
+    display: none;
+  }
+  .timeline_right .timeline_icon{
+    margin-left: 0px;
+  }
+  .timeline_left .timeline_icon{
+    margin-right: 0px;
+  }
+}
+</style>
 </head>
 
 <body class="hide-navbar">
@@ -916,6 +1063,55 @@
           <li class="follow-us__item">
             <a href="https://github.com/IoThinc-VIT" target="_blank" rel="noopener noreferrer" aria-label="Github"><img
                 data-markup-inline src="assets/images/icons/icon-github-circle.svg" alt="Github" /></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="set-bg section" id="timeline">
+      <div class="content__wrapper">
+        <ul class="timeline_list">
+          <li class="timeline_item timeline_right" style="color: #9251ac;">
+            <div class="timeline_info">
+              <div class="timeline_desc">
+                <h1 class="timeline_title">BIRTHDAY</h1>
+                <p class="timeline-msg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio perferendis maiores placeat est tempora. Minima libero rem error qui iusto!</p>
+              </div>
+              <div class="timeline_time" style="color: #f6a4ec; background: #9251ac;">
+                <p>30/12/2001</p>
+              </div>
+            </div>
+            <div class="timeline_icon" style="background: #f6a4ec;">
+              <i class="fas fa-2x fa-birthday-cake"></i>
+            </div>
+          </li>
+          <li class="timeline_item timeline_left" style="color: #555ac0;">
+            <div class="timeline_icon" style="background: #87bbfe;">
+              <i class="fas fa-2x fa-birthday-cake"></i>
+            </div>
+            <div class="timeline_info">
+              <div class="timeline_desc">
+                <h1 class="timeline_title">BIRTHDAY</h1>
+                <p class="timeline-msg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum consequuntur quae atque, sunt magnam dolorem non autem inventore minima quos.</p>
+              </div>
+              <div class="timeline_time" style="color: #87bbfe; background: #555ac0;">
+                <p>30/12/2001</p>
+              </div>
+            </div>
+          </li>
+          <li class="timeline_item timeline_right timeline_last" style="color: #24b47e;">
+            <div class="timeline_info">
+              <div class="timeline_desc">
+                <h1 class="timeline_title">BIRTHDAY</h1>
+                <p class="timeline-msg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio perferendis maiores placeat est tempora. Minima libero rem error qui iusto!</p>
+              </div>
+              <div class="timeline_time" style="color: #aff1b6; background: #24b47e;">
+                <p>30/12/2001</p>
+              </div>
+            </div>
+            <div class="timeline_icon" style="background: #aff1b6;">
+              <i class="fas fa-2x fa-birthday-cake"></i>
+            </div>
           </li>
         </ul>
       </div>
