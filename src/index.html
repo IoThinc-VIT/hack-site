@@ -112,7 +112,7 @@
 
   <!-- This is a custom favicon that changes from black to white depending on your device's dark theme -->
   <!-- Don't include the favicon.ico or the svg one won't be loaded -->
-  <link rel="icon" type="image/svg+xml" href="https://avatars.githubusercontent.com/u/56487943?s=200&v=4" />
+  <link rel="icon" type="image/svg+xml" href="assets/images/Logo-4B.svg" />
   <link rel="mask-icon" href="https://avatars.githubusercontent.com/u/56487943?s=200&v=4" color="#1f143a" />
 
   <!-- Favicon -->
@@ -237,6 +237,7 @@
       background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAOUlEQVRIx2NkYOP5z0BDwMRAYzBqAWELJOVUsEpQS5xxNBWNpqLRVDRqwWgqGrWALhbYu3jTNBUBAOTfCpTGsWyyAAAAAElFTkSuQmCC) !important;
       text-align: center;
     }
+
     .container-02 h2 {
       position: relative;
       z-index: 11;
@@ -255,6 +256,7 @@
       text-align: center;
       text-align: center;
     }
+
     .container-02::before {
       position: absolute;
       top: 0;
@@ -265,6 +267,7 @@
       clip-path: circle(30% at 88% 77%);
       content: '';
     }
+
     .container-02::after {
       position: absolute;
       top: 0;
@@ -275,6 +278,7 @@
       clip-path: circle(20% at 15% 15%);
       content: '';
     }
+
     .container-02 .glassmorphic-card {
       position: relative;
       z-index: 1;
@@ -292,15 +296,18 @@
       float: left !important;
       transition: 0.7s;
     }
+
     @media only screen and (max-width: 600px) {
       .container-02 {
         width: 90vw !important;
         overflow-x: hidden !important;
       }
+
       .container-02 .glassmorphic-card {
         width: 75% !important;
         overflow-y: hidden;
       }
+
       .container-02::after {
         position: absolute;
         top: 0;
@@ -311,6 +318,7 @@
         clip-path: circle(20% at 15% 15%);
         content: '';
       }
+
       .container-02::before {
         position: absolute;
         top: 0;
@@ -323,6 +331,7 @@
         transform: translateX(260px) !important;
       }
     }
+
     .container-02 .glassmorphic-card::before {
       position: absolute;
       top: 0;
@@ -351,11 +360,13 @@
       color: #fff;
       font-size: 1.8em;
     }
+
     .container-02 .glassmorphic-card .contentBox p {
       color: #fff;
       font-size: 1em;
       font-weight: 300;
     }
+
     .container-02 .glassmorphic-card .contentBox a {
       position: relative;
       display: inline-block;
@@ -370,235 +381,268 @@
       font-weight: 500;
       text-decoration: none;
     }
+
     .container-02 p {
       position: relative;
       z-index: 12;
       margin: 20px auto 10px;
       color: #fff;
     }
+
     .container-02 p span {
       font-weight: 700;
     }
   </style>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style type="text/css">
-  .timeline_list{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-  }
-  .timeline_item{
-    width: 100%;
-    color: #000;
-    display: flex;
-    align-items: center;
-    border-radius: 12px;
-    margin-bottom: 60px;
-  }
-  .timeline_info{
-    width: 75%;
-    display: flex;
-    border-radius: 12px;
-    position: relative;
-    z-index: 2;
-    box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
+    .timeline_list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+    }
+
+    .timeline_item {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      margin-bottom: 60px;
+      border-radius: 12px;
+      color: #000;
+    }
+
+    .timeline_info {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      width: 75%;
+      border-radius: 12px;
+      box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
         0 18px 36px -18px rgba(0, 0, 0, 0.3),
         0 -12px 36px -8px rgba(0, 0, 0, 0.025);
-  }
-  .timeline_desc{
-    flex-grow: 1;
-    background: white;
-    text-align: left;
-    padding: 16px;
-    border-top-left-radius: 12px;
-    border-bottom-left-radius: 12px;
-    font-size: 14px;
-  }
-  .timeline_title{
-    font-size: 20px;
-    margin: 0;
-  }
-  .timeline_msg{
-    color: black;
-    margin: 8px 0 0 0;
-  }
-  .timeline_time{
-    width: 140px;
-    min-width: 140px;
-    max-width: 140px;
-    background: linear-gradient(90deg, #0a9991cc, #6ffff0cc);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 16px;
-    letter-spacing: 1px;
-    font-weight: 700;
-    border-top-right-radius: 12px;
-    border-bottom-right-radius: 12px;
-  }
-  .timeline_time p{
-    margin: 0;
-  }
-  .timeline_icon{
-    width: 50px;
-    height: 50px;
-    color: inherit;
-    background: linear-gradient(90deg, #0a9991cc, #6ffff0cc);
-    font-size: 30px;
-    font-weight: 700;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 12px;
-    border-radius: 50%;
-    position: relative;
-    z-index: 1;
-  }
-  .timeline_icon::before{
-    content: '';
-    width: 100px;
-    height: 3px;
-    background: inherit;
-    position: absolute;
-  }
-  .timeline_icon::after{
-    content: '';
-    width: 3px;
-    height: 150px;
-    background: inherit;
-    position: absolute;
-    bottom: 0%;
-    transform: translateY(100%);
-  }
-  .timeline_right .timeline_icon{
-    margin-left: 80px;
-  }
-  .timeline_right .timeline_icon::before{
-    left: 0%;
-    transform: translateX(-100%);
-  }
-  .timeline_left .timeline_icon{
-    margin-right: 80px;
-  }
-  .timeline_left .timeline_icon::before{
-    right: 0%;
-    transform: translateX(100%);
-  }
-  .timeline_last .timeline_icon::after{
-    display: none;
-  }
+    }
 
-  
-  .timeline_time{
-    background: linear-gradient(-90deg, #0a9991, #6ffff0) !important;
-  }
-  .timeline_icon{
-    background: linear-gradient(-90deg, #0a9991, #6ffff0) !important;
-  }
-  .timeline_info{
-    border: 2px solid #6ffff0;
-    background: #6ffff0;
-  }
+    .timeline_desc {
+      flex-grow: 1;
+      padding: 16px;
+      background: white;
+      border-bottom-left-radius: 12px;
+      border-top-left-radius: 12px;
+      font-size: 14px;
+      text-align: left;
+    }
 
-  @media screen and (max-width: 800px){ 
-    .timeline_desc p{
-      font-size: 13px;
+    .timeline_title {
+      margin: 0;
+      font-size: 20px;
     }
-    .timeline_desc h1{
-      font-size: 18px;
+
+    .timeline_msg {
+      margin: 8px 0 0;
+      color: black;
     }
-    .timeline_time{
-      padding: 8px;
+
+    .timeline_time {
+      display: flex;
+      width: 140px;
+      min-width: 140px;
+      max-width: 140px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+      background: linear-gradient(90deg, #0a9991cc, #6ffff0cc);
+      border-bottom-right-radius: 12px;
+      border-top-right-radius: 12px;
+      font-weight: 700;
+      letter-spacing: 1px;
     }
-    .timeline_time p{
-      font-size: 13px;
+
+    .timeline_time p {
+      margin: 0;
     }
-  }
-  @media screen and (max-width: 600px) {
-  .timeline_item{
-    max-width: 300px;
-    display: flex;
-    flex-direction: column-reverse;
-    margin-bottom: 50px;
-  }
-  .timeline_info{
-    width: 100%;
-    border: none;
-    display: flex;
-    flex-direction: column-reverse;
-    position: relative;
-  }
-  .timeline_info::after{
-    content: '';
-    width: 70%;
-    height: 100px;
-    box-sizing: border-box;
-    background: linear-gradient(0deg, #0a9991, #6ffff0);
-    clip-path: polygon(0% 0%, 0% 100%, 3% 100%, 3% 0, 97% 0, 97% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 0%);
-    position: absolute;
-    left: 50%;
-    top: 100%;
-    transform: translateX(-50%);
-    z-index: 4;
-  }
-  .timeline_desc{
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 12px;
-  }
-  .timeline_time{
-    width: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
-    padding: 12px 8px;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-    border-bottom-right-radius: 0px;
-  }
-  .timeline_icon{
-    display: none;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 48px 0px;
-    order: 1;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-  }
-  .timeline_icon::after{
-    display: none;
-  }
-  .timeline_icon::before{
-    display: none;
-  }
-  .timeline_right .timeline_icon{
-    margin-left: 0px;
-  }
-  .timeline_left .timeline_icon{
-    margin-right: 0px;
-  }
-  .timeline_last .timeline_info::after{
-    display: none;
-  }
-}
-</style>
+
+    .timeline_icon {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      width: 50px;
+      height: 50px;
+      align-items: center;
+      justify-content: center;
+      padding: 12px;
+      background: linear-gradient(90deg, #0a9991cc, #6ffff0cc);
+      border-radius: 50%;
+      color: inherit;
+      font-size: 30px;
+      font-weight: 700;
+    }
+
+    .timeline_icon::before {
+      position: absolute;
+      width: 100px;
+      height: 3px;
+      background: inherit;
+      content: '';
+    }
+
+    .timeline_icon::after {
+      position: absolute;
+      bottom: 0%;
+      width: 3px;
+      height: 150px;
+      background: inherit;
+      content: '';
+      transform: translateY(100%);
+    }
+
+    .timeline_right .timeline_icon {
+      margin-left: 80px;
+    }
+
+    .timeline_right .timeline_icon::before {
+      left: 0%;
+      transform: translateX(-100%);
+    }
+
+    .timeline_left .timeline_icon {
+      margin-right: 80px;
+    }
+
+    .timeline_left .timeline_icon::before {
+      right: 0%;
+      transform: translateX(100%);
+    }
+
+    .timeline_last .timeline_icon::after {
+      display: none;
+    }
+
+
+    .timeline_time {
+      background: linear-gradient(-90deg, #0a9991, #6ffff0) !important;
+    }
+
+    .timeline_icon {
+      background: linear-gradient(-90deg, #0a9991, #6ffff0) !important;
+    }
+
+    .timeline_info {
+      border: 2px solid #6ffff0;
+      background: #6ffff0;
+    }
+
+    @media screen and (max-width: 800px) {
+      .timeline_desc p {
+        font-size: 13px;
+      }
+
+      .timeline_desc h1 {
+        font-size: 18px;
+      }
+
+      .timeline_time {
+        padding: 8px;
+      }
+
+      .timeline_time p {
+        font-size: 13px;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      .timeline_item {
+        display: flex;
+        max-width: 300px;
+        flex-direction: column-reverse;
+        margin-bottom: 50px;
+      }
+
+      .timeline_info {
+        position: relative;
+        display: flex;
+        width: 100%;
+        flex-direction: column-reverse;
+        border: none;
+      }
+
+      .timeline_info::after {
+        position: absolute;
+        z-index: 4;
+        top: 100%;
+        left: 50%;
+        width: 70%;
+        height: 100px;
+        box-sizing: border-box;
+        background: linear-gradient(0deg, #0a9991, #6ffff0);
+        clip-path: polygon(0% 0%, 0% 100%, 3% 100%, 3% 0, 97% 0, 97% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 0%);
+        content: '';
+        transform: translateX(-50%);
+      }
+
+      .timeline_desc {
+        border-bottom-right-radius: 12px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+      }
+
+      .timeline_time {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        padding: 12px 8px;
+        border-bottom-right-radius: 0;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+      }
+
+      .timeline_icon {
+        display: none;
+        width: 100%;
+        box-sizing: border-box;
+        order: 1;
+        padding: 48px 0;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+      }
+
+      .timeline_icon::after {
+        display: none;
+      }
+
+      .timeline_icon::before {
+        display: none;
+      }
+
+      .timeline_right .timeline_icon {
+        margin-left: 0;
+      }
+
+      .timeline_left .timeline_icon {
+        margin-right: 0;
+      }
+
+      .timeline_last .timeline_info::after {
+        display: none;
+      }
+    }
+  </style>
 </head>
 
 <body class="hide-navbar">
   <header class="set-bg section section--hero" id="hero">
     <div class="title">
       <img src="assets/images/Logo-4B.svg" class="title__title" alt="iothon">
-      <span class="title__more-info">
-        <span class="title__online">Online</span>
-      </span>
+
     </div>
 
-    <a href="https://www.iothincvit.in/" class="" role="button" data-ga-apply-button data-location="hero" data-role="hacker"
-      target="_blank" rel="noopener noreferrer">
+    <a href="https://www.iothincvit.in/" class="" role="button" data-ga-apply-button data-location="hero"
+      data-role="hacker" target="_blank" rel="noopener noreferrer">
       <span class="btn red" style="min-width: 145px; margin: 20px">Apply now</span>
     </a>
   </header>
@@ -644,10 +688,8 @@
     </section>
 
     <section>
-      <div
-        class="container-02 row"
-        style="background-color: rosybrown !important; overflow-x: hidden !important; text-align: center !important"
-      >
+      <div class="container-02 row"
+        style="background-color: rosybrown !important; overflow-x: hidden !important; text-align: center !important">
         <div class="glassmorphic-card col-sm-8">
           <div class="contentBox">
             <h3>Design</h3>
@@ -888,8 +930,8 @@
                   <dd>
                     <p class="faq__answer" aria-hidden="true" id="faq-about-7">
                       Yes, here it is:
-                      <a href="https://www.iothincvit.in/" target="_blank"
-                        rel="noopener noreferrer" hreflang="en">Code of conduct</a>. <br />
+                      <a href="https://www.iothincvit.in/" target="_blank" rel="noopener noreferrer" hreflang="en">Code
+                        of conduct</a>. <br />
                       TL;DR: Be respectful, harassment and abuse are never tolerated.
                     </p>
                   </dd>
@@ -1136,36 +1178,38 @@
                 <h1 class="timeline_title">Opening Ceremony</h1>
                 <p class="timeline_msg"> We officially inaugurate our club’s grandest hackathon to the students.</p>
               </div>
-              <div class="timeline_time" >
+              <div class="timeline_time">
                 <p>DAY 1</p>
                 <p>16:00 - 18:00</p>
               </div>
             </div>
-            <div class="timeline_icon" >
+            <div class="timeline_icon">
               1
             </div>
           </li>
-          <li class="timeline_item timeline_left" >
+          <li class="timeline_item timeline_left">
             <div class="timeline_icon" style="background: linear-gradient(90deg, #0a9991cc, #6ffff0cc)">
               2
             </div>
             <div class="timeline_info">
               <div class="timeline_desc">
                 <h1 class="timeline_title">Attendance and Icebreaker</h1>
-                <p class="timeline_msg">Attendance for the event is taken and a fun activity is conducted to welcome and warm-up the contestants.</p>
+                <p class="timeline_msg">Attendance for the event is taken and a fun activity is conducted to welcome and
+                  warm-up the contestants.</p>
               </div>
-              <div class="timeline_time" style="color: #000; background: linear-gradient(90deg, #0a9991cc, #6ffff0cc)">
+              <div class="timeline_time" style=" background: linear-gradient(90deg, #0a9991cc, #6ffff0cc);color: #000">
                 <p>18:00 - 18:30</p>
               </div>
             </div>
           </li>
-          <li class="timeline_item timeline_right" >
+          <li class="timeline_item timeline_right">
             <div class="timeline_info">
               <div class="timeline_desc">
                 <h1 class="timeline_title">Speaker Session</h1>
-                <p class="timeline_msg">We are extremely lucky to be in the presence of Mr./Mrs./Ms. XYZ, who will share his/her’s own experience on hackathons and how our country is developing technologically.</p>
+                <p class="timeline_msg">We are extremely lucky to be in the presence of Mr./Mrs./Ms. XYZ, who will share
+                  his/her’s own experience on hackathons and how our country is developing technologically.</p>
               </div>
-              <div class="timeline_time" style="color: #000; background: linear-gradient(90deg, #0a9991cc, #6ffff0cc)">
+              <div class="timeline_time" style=" background: linear-gradient(90deg, #0a9991cc, #6ffff0cc);color: #000">
                 <p>18:30 - 19:00</p>
               </div>
             </div>
@@ -1173,7 +1217,7 @@
               3
             </div>
           </li>
-          <li class="timeline_item timeline_left" >
+          <li class="timeline_item timeline_left">
             <div class="timeline_icon" style="background: #CAE9FF;">
               4
             </div>
@@ -1182,19 +1226,20 @@
                 <h1 class="timeline_title">Review-1</h1>
                 <p class="timeline_msg">The first round of the event officially begins from now.</p>
               </div>
-              <div class="timeline_time" style="color: #000; background: #CAE9FF;">
+              <div class="timeline_time" style=" background: #CAE9FF;color: #000;">
                 <p>DAY 2</p>
                 <p>09:00 - 11:00</p>
               </div>
             </div>
           </li>
-          <li class="timeline_item timeline_right" >
+          <li class="timeline_item timeline_right">
             <div class="timeline_info">
               <div class="timeline_desc">
                 <h1 class="timeline_title">Elimination-1</h1>
-                <p class="timeline_msg">Results of Review-1 will be announced, and the selected participants are given a brief walk-through of the next round.</p>
+                <p class="timeline_msg">Results of Review-1 will be announced, and the selected participants are given a
+                  brief walk-through of the next round.</p>
               </div>
-              <div class="timeline_time" style="color: #000; background: #BEE9E8;">
+              <div class="timeline_time" style=" background: #BEE9E8;color: #000;">
                 <p>12:00</p>
               </div>
             </div>
@@ -1202,27 +1247,29 @@
               5
             </div>
           </li>
-          <li class="timeline_item timeline_left" >
+          <li class="timeline_item timeline_left">
             <div class="timeline_icon" style="background: #BEE9E8;">
               6
             </div>
             <div class="timeline_info">
               <div class="timeline_desc">
                 <h1 class="timeline_title">Community Event</h1>
-                <p class="timeline_msg">A fun, encouraging community event is hosted in the meantime, to lift the spirits of the participants.</p>
+                <p class="timeline_msg">A fun, encouraging community event is hosted in the meantime, to lift the
+                  spirits of the participants.</p>
               </div>
-              <div class="timeline_time" style="color: #000; background: #BEE9E8;">
+              <div class="timeline_time" style=" background: #BEE9E8;color: #000;">
                 <p>15:00 - 16:00</p>
               </div>
             </div>
           </li>
-          <li class="timeline_item timeline_right" >
+          <li class="timeline_item timeline_right">
             <div class="timeline_info">
               <div class="timeline_desc">
                 <h1 class="timeline_title">Review-2</h1>
-                <p class="timeline_msg">The second round of the event officially begins. Only the qualified participants from Review-1 can participate.</p>
+                <p class="timeline_msg">The second round of the event officially begins. Only the qualified participants
+                  from Review-1 can participate.</p>
               </div>
-              <div class="timeline_time" style="color: #000; background: #5FA8D3;">
+              <div class="timeline_time" style=" background: #5FA8D3;color: #000;">
                 <p>22:30 – 01:00</p>
               </div>
             </div>
@@ -1230,28 +1277,30 @@
               7
             </div>
           </li>
-          <li class="timeline_item timeline_left" >
+          <li class="timeline_item timeline_left">
             <div class="timeline_icon" style="background: #5FA8D3;">
               8
             </div>
             <div class="timeline_info">
               <div class="timeline_desc">
                 <h1 class="timeline_title">Elimination-2</h1>
-                <p class="timeline_msg">Results of Review-2 will be announced, and the selected participants are given a brief walk-through of the next round.</p>
+                <p class="timeline_msg">Results of Review-2 will be announced, and the selected participants are given a
+                  brief walk-through of the next round.</p>
               </div>
-              <div class="timeline_time" style="color: #000; background: #5FA8D3;">
+              <div class="timeline_time" style=" background: #5FA8D3;color: #000;">
                 <p>DAY 3</p>
                 <p>02:00</p>
               </div>
             </div>
           </li>
-          <li class="timeline_item timeline_right" >
+          <li class="timeline_item timeline_right">
             <div class="timeline_info">
               <div class="timeline_desc">
                 <h1 class="timeline_title">Review-3</h1>
-                <p class="timeline_msg">The third and final round begins, where the top 15 participants from the previous round can participate.</p>
+                <p class="timeline_msg">The third and final round begins, where the top 15 participants from the
+                  previous round can participate.</p>
               </div>
-              <div class="timeline_time" style="color: #000; background: #24b47e;">
+              <div class="timeline_time" style=" background: #24b47e;color: #000;">
                 <p>13:00 – 16:30</p>
               </div>
             </div>
@@ -1259,27 +1308,28 @@
               9
             </div>
           </li>
-          <li class="timeline_item timeline_left" >
+          <li class="timeline_item timeline_left">
             <div class="timeline_icon" style="background: #f6a4ec;">
               10
             </div>
             <div class="timeline_info">
               <div class="timeline_desc">
                 <h1 class="timeline_title">Speaker Session</h1>
-                <p class="timeline_msg"> We are thrilled to announce that Mr./Mrs./Ms. ABC will be present to give his/her ‘s ideas and views on the current fad.</p>
+                <p class="timeline_msg"> We are thrilled to announce that Mr./Mrs./Ms. ABC will be present to give
+                  his/her ‘s ideas and views on the current fad.</p>
               </div>
-              <div class="timeline_time" style="color: #000; background: #9251ac;">
+              <div class="timeline_time" style=" background: #9251ac;color: #000;">
                 <p>16:30 – 17:00</p>
               </div>
             </div>
           </li>
-          <li class="timeline_item timeline_right" >
+          <li class="timeline_item timeline_right">
             <div class="timeline_info">
               <div class="timeline_desc">
                 <h1 class="timeline_title">Results</h1>
                 <p class="timeline_msg"> Yayy!!! The results will be out and the winners will be mentioned.</p>
               </div>
-              <div class="timeline_time" style="color: #000; background: #555ac0;">
+              <div class="timeline_time" style=" background: #555ac0;color: #000;">
                 <p>17:30</p>
               </div>
             </div>
@@ -1287,16 +1337,17 @@
               11
             </div>
           </li>
-          <li class="timeline_item timeline_left timeline_last" >
+          <li class="timeline_item timeline_left timeline_last">
             <div class="timeline_icon" style="background: #aff1b6;">
               12
             </div>
             <div class="timeline_info">
               <div class="timeline_desc">
                 <h1 class="timeline_title">Ending Ceremony and Prize Distribution</h1>
-                <p class="timeline_msg"> Hence, we officially conclude the hackathon with the prize distribution for the winners, who displayed their unparalleled talent and skill throughout.</p>
+                <p class="timeline_msg"> Hence, we officially conclude the hackathon with the prize distribution for the
+                  winners, who displayed their unparalleled talent and skill throughout.</p>
               </div>
-              <div class="timeline_time" style="color: #000; background: #24b47e;">
+              <div class="timeline_time" style=" background: #24b47e;color: #000;">
                 <p>18:00</p>
               </div>
             </div>
