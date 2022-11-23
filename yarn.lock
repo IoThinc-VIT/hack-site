@@ -2413,10 +2413,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/prettier@npm:^2.2.3":
-  version: 2.2.3
-  resolution: "@types/prettier@npm:2.2.3"
-  checksum: b7e80288f9f776caca84391a7a217b8baac6b4fce00bb9701af69299d465cb8faf17466f0af0803970c74d2c191767ca729a6d21a2f7e2ce552d1ef6cc0d653a
+"@types/prettier@npm:^2.7.1":
+  version: 2.7.1
+  resolution: "@types/prettier@npm:2.7.1"
+  checksum: e298e298d85d1cf3f9a0cb1c134fb76b2a4d5608412a86090757238f54a0a9862a608d33f73b339f1591e3ae1e7beaca31913f2731a295e3f1b9857089d0108e
   languageName: node
   linkType: hard
 
@@ -5887,7 +5887,7 @@ fsevents@~2.3.1:
     "@types/eslint": ^7.2.10
     "@types/gtag.js": ^0.0.4
     "@types/node": ^15.0.1
-    "@types/prettier": ^2.2.3
+    "@types/prettier": ^2.7.1
     "@types/stylelint": ^9.10.1
     "@types/webfontloader": ^1.6.32
     "@types/webpack": ^5.28.0
@@ -5918,7 +5918,7 @@ fsevents@~2.3.1:
     postcss-loader: ^5.2.0
     postcss-preset-env: ^6.7.0
     postcss-reporter: ^7.0.2
-    prettier: 2.2.1
+    prettier: 2.8.0
     prettier-config-standard: ^4.0.0
     purgecss-webpack-plugin: ^4.0.3
     sass: ^1.32.12
@@ -9758,12 +9758,12 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"prettier@npm:2.2.1":
-  version: 2.2.1
-  resolution: "prettier@npm:2.2.1"
+"prettier@npm:2.8.0":
+  version: 2.8.0
+  resolution: "prettier@npm:2.8.0"
   bin:
     prettier: bin-prettier.js
-  checksum: 92c6c9f4b87eba1f28466edee57dd18c80d00b858edda77d46d1950d20e6e302b68ee255fc91133ba931e63c4577b5ae30da194d9626a8f3c0177778b91bf056
+  checksum: 3ab4e0ba05e7a89289924ec91c407f149b9ea279d0ebe409c6bee2470d70636e9bea4c24d71b9bcdae48c2804a299a34ae3f50fe9d49c7207dcd56eb5b7d3d38
   languageName: node
   linkType: hard
 
