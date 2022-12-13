@@ -2392,10 +2392,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^15.0.1":
-  version: 15.0.1
-  resolution: "@types/node@npm:15.0.1"
-  checksum: 4e4fb69394efb224272ad7c6b6dc16a381b97e46a8f3c21d33fec51ef13a4d635f571b446d127eae333ea6a763f304b787f4b3f73e24e1f3b05a21b481900dfb
+"@types/node@npm:^18.11.14":
+  version: 18.11.14
+  resolution: "@types/node@npm:18.11.14"
+  checksum: 6929b90b86226587a5fe328b8e72a5a5cb1e0340db33e4c44a29b9ad1f2fcb551c03d833a977aaa071740d074a2b29748bd9bda3da8a642de9375c8326b72ad8
   languageName: node
   linkType: hard
 
@@ -5886,7 +5886,7 @@ fsevents@~2.3.1:
     "@fontsource/montserrat": ^4.2.2
     "@types/eslint": ^7.2.10
     "@types/gtag.js": ^0.0.4
-    "@types/node": ^15.0.1
+    "@types/node": ^18.11.14
     "@types/prettier": ^2.2.3
     "@types/stylelint": ^9.10.1
     "@types/webfontloader": ^1.6.32
