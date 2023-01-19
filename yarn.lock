@@ -1655,10 +1655,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fontsource/montserrat@npm:^4.2.2":
-  version: 4.2.2
-  resolution: "@fontsource/montserrat@npm:4.2.2"
-  checksum: c99d5a79fd6dbec4c30fcc583a7c1ddbc4bfa372a86bda2fbedacac610315d331d8e1bfcfc7627bb104552715a786115b8f5eb1231b8c5bd379febe155680fc9
+"@fontsource/montserrat@npm:^4.5.14":
+  version: 4.5.14
+  resolution: "@fontsource/montserrat@npm:4.5.14"
+  checksum: ce0bcee6cc1b564f0a103f0830a2362a53bd02f66f49517acbcfcef1bfcea098096453aa54ff1a1f37428837f0e5bdc6ac05f4e66908fd3cf6cca0df2be0ebcb
   languageName: node
   linkType: hard
 
@@ -5883,7 +5883,7 @@ fsevents@~2.3.1:
     "@babel/core": ^7.14.0
     "@babel/polyfill": ^7.12.1
     "@babel/preset-env": ^7.14.0
-    "@fontsource/montserrat": ^4.2.2
+    "@fontsource/montserrat": ^4.5.14
     "@types/eslint": ^7.2.10
     "@types/gtag.js": ^0.0.4
     "@types/node": ^15.0.1
